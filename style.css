@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    height: 100vh;
+    width:100vw;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow-x:hidden;
+}
+header{
+    width: 100%;
+    height: 7%;
+    background-color: purple;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+    font-weight: 450;
+}
+nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main{
+    position: relative;
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    text-align: right;
+    line-height:25px;
+    line-height: 25px;
+    justify-content: center;
+}
+.active-nav{
+    color:inherit;
+    font-weight: bold;
+}
+.container img{
+    box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.506)
+    ;
+    height: 100%;
+    width: 100%;
+}
+.container h1{
+    color:purple;
+}
+.container p{
+    color: grey;
+}
+#project img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid beige;
+    box-shadow: 0px 0px 10px 5px purple;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+#contact{
+    font-size: 1.1em;
+}
+#contact form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap:15px;
+    text-align: center;
+}
+form input{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    border:3px solid black;
+    outline:2px solid purple;
+}
+form button{
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    background-color: yellow;
+    border:2px solid white;
+    transition: all 0.3s ease;
+
+}
+form button:hover{
+    background-color: lightgreen;
+    color:black;
+}
+form button:active{
+    background-color: green;
+    color:white;
+    transform: scale(0.9,0.9);
+}
+hr{
+    height:1px;
+    border:none;
+    background-color: yellow;
+    width: 80%;
+}
+#siteReport{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:50px 100px;
+    line-height: 1.2em;
+    gap:20px;
+    font-size: 1.2em;
+}
+h1{
+    color:purple;
+}
+#siteReport img{
+    max-width: 80%;
+    min-width: 40%;
+    outline:1px solid green;
+    object-fit: cover;
+    object-position: center;
+}
+#project{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+h1{
+    line-height: 1.1em;
+}
+iframe{
+    width: 80%;
+    height: 80vh;
+}
